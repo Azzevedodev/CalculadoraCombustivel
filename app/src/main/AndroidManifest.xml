@@ -16,6 +16,15 @@
             android:name=".PrecoActivity"
             android:exported="false" />
         <activity
+            android:name=".ResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DistanciaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ConsumoActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
