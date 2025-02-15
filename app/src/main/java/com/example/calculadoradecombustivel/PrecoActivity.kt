@@ -21,17 +21,24 @@ class PrecoActivity : AppCompatActivity() {
         setContentView(R.layout.activity_preco)
 
 
-
-        val btnPreco = findViewById<TextInputEditText>(R.id.edt_preco)
+        val edtPreco = findViewById<TextInputEditText>(R.id.edt_preco)
         val btnProximo1 = findViewById<Button>(R.id.btn_proximo1)
         btnProximo1.setOnClickListener {
 
-            val precoStr: String = btnPreco.text.toString()
+            val precoCombustivel = edtPreco.text.toString()
+            if (precoCombustivel.isEmpty()) {
+                val intent = Intent(this, ResultActivity::class.java)
+                intent.putExtra("PRECO_COMBUSTIVEL", precoCombustivel)
+                startActivity(intent)
+            }
 
-            if (precoStr.isEmpty()){
-                Snackbar.make(btnPreco,
+            val precoStr: String = edtPreco.text.toString()
+            if (precoStr.isEmpty()) {
+                Snackbar.make(
+                    edtPreco,
                     "Preencha o campo vazio para continuar",
-                    Snackbar.LENGTH_LONG).show()
+                    Snackbar.LENGTH_LONG
+                ).show()
 
             } else {
                 val preco = precoStr.toFloat()

@@ -7,4 +7,133 @@
     android:layout_height="match_parent"
     tools:context=".ResultActivity">
 
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_novocalculo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="50dp"
+        android:text="Novo Calculo"
+        android:background="@drawable/background_button"
+        android:textStyle="bold"
+        android:textColor="#FFEB3B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_preco1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="300dp"
+        android:layout_marginStart="50dp"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginBottom="40dp"
+        android:text="Preço"
+        app:layout_constraintBottom_toTopOf="@+id/tv_consumo1"
+        tools:layout_editor_absoluteX="26dp" />
+
+    <TextView
+        android:id="@+id/tv_consumo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_marginEnd="200dp"
+        android:layout_marginStart="50dp"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginBottom="40dp"
+        android:text="Consumo"
+        app:layout_constraintBottom_toTopOf="@+id/tv_km1"
+        tools:layout_editor_absoluteX="26dp" />
+
+    <TextView
+        android:id="@+id/tv_km1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="300dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="150dp"
+        android:text="Km"
+        android:textColor="@color/red"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_novocalculo"
+        tools:layout_editor_absoluteX="26dp" />
+
+    <TextView
+        android:id="@+id/tv_preco2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="300dp"
+        android:layout_marginEnd="60dp"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"
+        android:textColor="@color/red"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_consumo2"
+        tools:layout_editor_absoluteX="280dp"
+        tools:text="7.20" />
+
+    <TextView
+        android:id="@+id/tv_consumo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="300dp"
+        android:layout_marginEnd="90dp"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"
+        android:textColor="@color/red"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_km2"
+        tools:layout_editor_absoluteX="286dp"
+        tools:text="5" />
+
+    <TextView
+        android:id="@+id/tv_km2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="300dp"
+        android:layout_marginEnd="60dp"
+        android:gravity="center"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginBottom="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_novocalculo"
+        tools:layout_editor_absoluteX="286dp"
+        tools:text="300" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="413dp"
+        android:layout_height="346dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/img_result"
+        tools:layout_editor_absoluteY="-80dp" />
+
+    <TextView
+        android:id="@+id/tv_resultfinal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="@color/yelow"
+        tools:text="R$ 432"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
