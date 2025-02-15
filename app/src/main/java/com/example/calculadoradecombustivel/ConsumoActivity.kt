@@ -16,6 +16,9 @@ class ConsumoActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_consumo)
 
+
+        val preco = intent.getFloatExtra("PRECO_COMBUSTIVEL", 0.0f)
+
         val btnConsumo = findViewById<TextInputEditText>(R.id.edt_consumo)
         val btnProximo2 = findViewById<Button>(R.id.btn_proximo2)
         btnProximo2.setOnClickListener {
@@ -28,11 +31,17 @@ class ConsumoActivity : AppCompatActivity() {
                     Snackbar.LENGTH_LONG
                 ).show()
             } else {
-                val consumo = consumoStr.toFloat()
+
+                val Consumo = consumoStr.toFloat()
                 val intent = Intent(this, DistanciaActivity::class.java)
+                intent.putExtra("PRECO_COMBUSTIVEL", preco)
+                intent.putExtra("CONSUMO", Consumo)
                 startActivity(intent)
             }
 
+
         }
+
     }
 }
+
