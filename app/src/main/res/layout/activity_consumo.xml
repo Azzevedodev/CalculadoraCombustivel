@@ -65,6 +65,7 @@
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
         android:layout_marginStart="16dp"
         android:text="Passo 2 de 3"
         android:textColor="@color/red"
