@@ -65,6 +65,7 @@
         android:id="@+id/text_two"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
         android:layout_marginStart="18dp"
         android:text="Passo 1 de 3"
         android:textColor="@color/red"
