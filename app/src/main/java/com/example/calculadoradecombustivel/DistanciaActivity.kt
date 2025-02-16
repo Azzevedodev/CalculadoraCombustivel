@@ -23,15 +23,15 @@ class DistanciaActivity : AppCompatActivity() {
         val btnProximo3 = findViewById<Button>(R.id.btn_calcular)
         btnProximo3.setOnClickListener {
 
-            val distanciaStr: String = btnDistancia.text.toString()
-            if (distanciaStr.isEmpty()) {
+            val distanciaStr = btnDistancia.text
+            if (distanciaStr?.isEmpty() == true) {
                 Snackbar.make(
                     btnDistancia,
                     "Preencha o campo vazio para continuar",
                     Snackbar.LENGTH_LONG
                 ).show()
             } else {
-                val distancia = distanciaStr.toFloat()
+                val distancia = distanciaStr.toString().toInt()
 
                 val resultadofinal = (distancia/consumo)*preco
 
