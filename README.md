@@ -1,5 +1,30 @@
-# Calculadora de combustível
-Esse projeto é um aplicativo Android nativo desenvolvido com a linguagem kotlin, sua principal funcionalidade é calcular o custo de combustível e mostrar o resultado na tela final.
+# Calculadora de Combustível
+Esse projeto é um aplicativo Android nativo desenvolvido com a linguagem Kotlin. Sua principal funcionalidade é calcular o custo total de combustível necessário para uma viagem, com base no preço do combustível, consumo do veículo e distância a ser percorrida. O resultado é exibido em uma tela separada, mostrando o valor final e os dados utilizados no cálculo.
+
+## Funcionalidades
+**Coleta de Dados:**
+
+Preço do combustível.
+
+Consumo do veículo (km/l).
+
+Distância a ser percorrida até o destino (km).
+
+**Cálculo Automático:**
+
+O aplicativo calcula o custo total.
+
+**Navegação entre Telas:**
+
+O usuário é guiado por uma sequência de telas para inserir os dados e visualizar o resultado.
+
+**Feedback Visual:**
+
+Mensagens de erro (via Snackbar) são exibidas caso o usuário deixe campos obrigatórios vazios.
+
+**Reiniciar Cálculo:**
+
+O usuário pode realizar um novo cálculo ao final de todas as etapas.
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
@@ -15,14 +40,16 @@ Esse projeto é um aplicativo Android nativo desenvolvido com a linguagem kotlin
 - Activity
 - Intent
 - Snackbar
-- ViweGroups
+- ViewGroups
 - ConstraintLayout
 - Views
 - ImageView
 - TextView
 - EditText
 - Button
-- ImageView
+- Material Components
+- TextInputLayout e TextInputEditText
+  
 
 
 ## License
